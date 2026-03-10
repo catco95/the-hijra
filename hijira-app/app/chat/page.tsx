@@ -1,41 +1,62 @@
-export default function ChatPage() {
+export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-black px-6 py-10">
-      <div className="mx-auto max-w-4xl">
-        <div className="mb-8">
-          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-gray-500">
-            The Hijra
+    <main className="min-h-screen bg-white text-black">
+      <section className="mx-auto flex min-h-screen max-w-6xl items-center px-6 py-16">
+        <div className="max-w-3xl">
+          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-gray-500">
+            Islamic AI Platform
           </p>
 
-          <h1 className="mb-3 text-4xl font-bold tracking-tight">
-            Islamic AI Chat
+          <h1 className="mb-6 text-5xl font-bold tracking-tight sm:text-6xl">
+            The Hijra
           </h1>
 
-          <p className="max-w-2xl text-gray-600">
-            Ask questions and receive source-first Islamic answers with clarity,
-            trust, and scholarly respect.
+          <p className="mb-8 max-w-2xl text-lg leading-8 text-gray-600">
+            Source-first Islamic AI with clarity, trust, and scholarly respect.
+            Built to help users ask, learn, and explore with a cleaner Islamic
+            knowledge experience.
           </p>
-        </div>
 
-        <div className="mb-6 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
-          <div className="min-h-[300px] rounded-xl bg-gray-50 p-4 text-gray-500">
-            Chat responses will appear here.
+          <div className="flex flex-col gap-4 sm:flex-row">
+            <a
+              href="/chat"
+              className="rounded-full bg-black px-6 py-3 text-sm font-medium text-white"
+            >
+              Enter Hijra
+            </a>
+
+            <a
+              href="/chat"
+              className="rounded-full border border-gray-300 px-6 py-3 text-sm font-medium text-black"
+            >
+              Explore Chat
+            </a>
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-3">
+            <div className="rounded-2xl border border-gray-200 p-5">
+              <h2 className="mb-2 text-sm font-semibold">Source First</h2>
+              <p className="text-sm text-gray-600">
+                Built around trusted Islamic knowledge, not random guesswork.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-gray-200 p-5">
+              <h2 className="mb-2 text-sm font-semibold">Clear and Simple</h2>
+              <p className="text-sm text-gray-600">
+                Designed for clean reading, easy questions, and focused learning.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-gray-200 p-5">
+              <h2 className="mb-2 text-sm font-semibold">Built to Grow</h2>
+              <p className="text-sm text-gray-600">
+                Ready for chat, sources, research tools, and future scholar review.
+              </p>
+            </div>
           </div>
         </div>
-
-        <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
-          <textarea
-            placeholder="Ask an Islamic question..."
-            className="min-h-[120px] w-full resize-none rounded-xl border border-gray-200 p-4 outline-none"
-          />
-
-          <div className="mt-4 flex justify-end">
-            <button className="rounded-full bg-black px-6 py-3 text-sm font-medium text-white">
-              Send
-            </button>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
   );
 }
